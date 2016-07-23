@@ -4,7 +4,7 @@ function onRequest(request, response) {
   console.log("Request received.");
   console.log(request.url);
   response.writeHead(200, {"Content-Type": "text/plain"});
-  if (request.url === "/html") {
+  if (request.url === "/stu") {
 	response.write("html aaaaaa");
   } else {
 	response.write("Hello World");
