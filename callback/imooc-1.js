@@ -1,6 +1,4 @@
-/**
- * Created by shiyong on 7/21.
- */
+
 var http = require('http');
 var cheerio = require('cheerio');
 //console.log(cheerio);
@@ -26,6 +24,7 @@ function filterChapters(html) {
   var courseData = [];
   chapters.each(function (item) {
 	var chapter =$(this);
+	
 	var chapterTitle = chapter.find('strong').text();//拿到文本
 
 	var videos =chapter.find('.video').children('li');
