@@ -1,0 +1,212 @@
+/*公用部分*/
+.comWidth{
+	width: 1000px;
+	margin: 0 auto;
+}
+.fl{float: left; }
+.fr{float: right; }
+*{ margin: 0;padding: 0;  }
+li{
+	text-decoration: none;
+	list-style: none;
+}
+.hide{display: none}
+.show{display: block}
+/*topBar*/
+.headerBar .topBar{
+	height: 31px;
+	background: #F7F7F7;
+	line-height: 31px;
+}
+.headerBar .topBar .leftArea{
+	padding-left: 20px;
+	width: 150px;
+	float: left;
+}
+.headerBar .topBar .rightArea{
+	float: right;
+	width: 300px;
+}
+/*logoBar*/
+.headerBar .logoBar {
+	background: #1D7AD9;
+	height: 85px;
+}
+.headerBar .logoBar .imoocLogo{
+	padding-left: 40px;
+	padding-top: 13px;
+	float: left;
+}
+/*searchBar*/
+.headerBar .logoBar .searchBox{
+	width: 420px;
+	padding-top: 23px;
+	margin-left: 180px;
+
+}
+.headerBar .logoBar .searchBox .searchText{
+	background: #FFF;
+	width:350px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+
+}
+.headerBar .logoBar .searchBox .searchBtn{
+	width: 70px;
+	height: 35px;
+	font-size: 14px;
+	background-color:#FF8C00;
+	color:#FFF;
+}
+/*shopCartArea*/
+.headerBar .logoBar .shopCartArea{
+	width: 145px;
+	height: 35px;
+	margin-top:23px;
+	margin-right: 50px;
+	background-color:#FF8C00;
+	color:#FFF;
+}
+.headerBar .logoBar .shopCartArea .shopIcon{
+	display: block;
+	padding: 5px 10px 5px 10px;
+}
+.headerBar .logoBar .shopCartArea .shopText{
+	display: block;
+	padding: 5px 10px 5px 10px;
+}
+.headerBar .logoBar .shopCartArea .shopNum{
+	display: block;
+	padding: 5px 10px 5px 10px;
+	border-left: 2px solid #FF9C01 ;
+	height: 35px;
+}
+/*navBox*/
+.headerBar .navBox{
+	height: 35px;
+	background-color:#1369C0;
+	color:#FFF;
+}
+.headerBar .navBox .shopClass{
+	position: relative;
+}
+.headerBar .navBox .ProductCategories{
+	margin: 5px 10px 5px 15px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.headerBar .navBox .shopClass .showDownIcon{
+	margin: 10px 10px 5px 15px;
+}
+/*设置下拉为绝对定位,  通过hover事件show和hide*/
+.headerBar .navBox .shopClass .shopDisplayArea{
+	position: absolute;
+	top: 35px;
+	background-color:#4593FD ;
+}
+.headerBar .navBox .shopClass .shopDisplayArea li{
+	border: 1px solid #3487F2;
+	padding: 5px 10px 5px 15px;
+
+}
+.headerBar .navBox .shopClass .shopDisplayArea li a{
+	color: #FFF;
+	padding: 5px;
+}
+/*shopListNav*/
+.headerBar .navBox .shopListNav{
+	margin-left: 50px;
+}
+.headerBar .navBox .shopListNav li{
+	display: inline-block;
+	margin: 5px 20px 5px;
+}
+.headerBar .navBox .shopListNav li a{   /*设置总的color 竟然设置不到a上面来*/
+	background-color:#1369C0;
+	color:#FFF;
+	font-size: 16px;
+}
+/*中间的图片*/
+.middlePic img{
+	margin-top: -7px;
+}
+/*SpecificCommodity 共有的高度*/
+.comHight{
+height: 464px;
+}
+/*SpecificCommodity  topTip*/
+.specificCommodity .topTip{
+	height: 64px;
+
+}
+.specificCommodity .topTipIcon{
+	margin: 10px 20px;
+}
+.specificCommodity .topTipText{
+	margin-top: 22px;
+}
+.specificCommodity .topTipMore{
+	margin: 22px 30px;
+}
+/*specificCommodityRight */
+.specificCommodity .specificCommodityRight{
+	width: 808px;
+	height: 400px;
+}
+	/*specificCommodityRight  specificCommodityUp*/
+.specificCommodity .specificCommodityRight .specificCommodityUp{
+	width: 808px;
+	height: 261px;
+	margin: 0;
+}
+.specificCommodity .specificCommodityRight .specificCommodityUp li{
+	width: 202px;
+	height: 261px;
+	border-right: 1px solid #999;
+	border-bottom: 1px solid #999;
+	border-top: 1px solid #999;
+}
+.specificCommodity .specificCommodityRight .specificCommodityUp li:first-child{
+	border-left: 1px solid #999;
+}
+/*specificCommodityRight  */
+.specificCommodity .specificCommodityRight .specificCommodityDown {
+	width: 808px;
+	height: 139px;
+}
+.specificCommodity .specificCommodityRight .specificCommodityDown li{
+	width: 202px;
+	height: 139px;
+	border-right: 1px solid #999;
+	border-bottom: 1px solid #999;
+}
+.specificCommodity .specificCommodityRight .specificCommodityDown li:first-child{
+	border-left: 1px solid #999;
+}
+.specificCommodity .specificCommodityRight .specificCommodityDown li img{
+	padding-top: 15px;
+}
+.specificCommodity .specificCommodityRight .specificCommodityDown li span{
+	width: 100px;
+	padding-top: 30px;
+}
+
+/*底部footer*/
+.footer{
+	background-color: #D4D4D4;
+	margin-top: 50px;
+}
+.footer div:first-child{
+	padding-top: 50px;
+	text-align: center;
+}
+.footer div:nth-child(2),
+.footer div:nth-child(3){
+	padding-top: 10px;
+	text-align: center;
+}
+.footer div:nth-child(3) img{
+	padding: 15px 15px 60px;
+
+}

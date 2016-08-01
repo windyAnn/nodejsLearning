@@ -1,0 +1,13 @@
+{
+  "name": "OnlineRetailers",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "jade": "~1.11.0",
+    "body-parser": "~1.15.1",
+    "express": "~4.13.4"
+  },
+  "devDependencies": {
+    "connect-multiparty": "^2.0.0"
+  }
+}

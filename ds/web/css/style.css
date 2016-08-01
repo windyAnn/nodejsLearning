@@ -1,0 +1,223 @@
+.comWidth {
+  width: 1000px;
+  margin: 0 auto; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+li {
+  text-decoration: none;
+  list-style: none; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+.headerBar .topBar {
+  height: 31px;
+  background: #F7F7F7;
+  line-height: 31px; }
+  .headerBar .topBar .leftArea {
+    padding-left: 20px;
+    width: 150px; }
+
+.headerBar .logoBar {
+  background: #1D7AD9;
+  height: 85px; }
+  .headerBar .logoBar .imoocLogo {
+    padding-left: 40px;
+    padding-top: 13px; }
+
+.headerBar .logoBar .searchBox {
+  width: 430px;
+  padding-top: 23px;
+  margin-left: 180px; }
+  .headerBar .logoBar .searchBox .searchText {
+    background: #FFF;
+    width: 350px;
+    height: 35px;
+    line-height: 35px; }
+  .headerBar .logoBar .searchBox .searchBtn {
+    width: 70px;
+    height: 39px;
+    font-size: 14px;
+    background-color: #FF8C00;
+    color: #FFF; }
+
+.headerBar .logoBar .shopCartArea {
+  width: 180px;
+  height: 35px;
+  margin-top: 23px;
+  margin-right: 50px;
+  background-color: #FF8C00;
+  color: #FFF; }
+  .headerBar .logoBar .shopCartArea .shopIcon, .headerBar .logoBar .shopCartArea .shopText {
+    padding: 5px 10px 5px 10px; }
+  .headerBar .logoBar .shopCartArea .shopNum {
+    padding: 5px 10px 5px 10px;
+    border-left: 2px solid #FF9C01;
+    height: 25px;
+    width: 40px; }
+
+.headerBar .navBox {
+  height: 35px;
+  background-color: #1369C0;
+  color: #FFF; }
+  .headerBar .navBox .shopClass {
+    position: relative; }
+  .headerBar .navBox .ProductCategories {
+    margin: 5px 10px 5px 15px;
+    font-size: 18px;
+    font-weight: bold; }
+  .headerBar .navBox .shopClass .showDownIcon {
+    margin: 10px 10px 5px 15px; }
+
+.headerBar .navBox .shopListNav {
+  margin-left: 50px; }
+  .headerBar .navBox .shopListNav li {
+    display: inline-block;
+    margin: 5px 20px 5px; }
+    .headerBar .navBox .shopListNav li a {
+      background-color: #1369C0;
+      color: #FFF;
+      font-size: 16px; }
+
+.headerBar .navBox .shopClass .shopDisplayArea {
+  position: absolute;
+  top: 35px;
+  background-color: #4593FD; }
+  .headerBar .navBox .shopClass .shopDisplayArea li {
+    border: 1px solid #3487F2;
+    padding: 5px 10px 5px 15px; }
+    .headerBar .navBox .shopClass .shopDisplayArea li a {
+      color: #FFF;
+      padding: 5px; }
+
+.comHight {
+  height: 464px; }
+
+.specificCommodity .topTip {
+  height: 64px; }
+
+.specificCommodity .topTipIcon {
+  margin: 10px 20px; }
+
+.specificCommodity .topTipText {
+  margin-top: 22px; }
+
+.specificCommodity .topTipMore {
+  margin: 22px 30px; }
+
+.specificCommodity .specificCommodityList {
+  width: 1000px;
+  height: 400px;
+  position: relative; }
+
+.specificCommodity .specificCommodityLeft {
+  width: 190px;
+  height: 400px;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.specificCommodity .specificCommodityRight {
+  width: 808px;
+  height: 400px;
+  border-bottom: 1px solid #999;
+  border-top: 1px solid #999;
+  border-left: 1px solid #999; }
+  .specificCommodity .specificCommodityRight .specificCommodityUp {
+    width: 808px;
+    height: 261px;
+    margin: 0; }
+  .specificCommodity .specificCommodityRight .specificCommodityUp li {
+    width: 201px;
+    height: 261px;
+    border-bottom: 1px solid #999;
+    border-right: 1px solid #999;
+    display: inline-block;
+    position: relative; }
+  .specificCommodity .specificCommodityRight .specificCommodityUp li .addInShopCart {
+    right: 0;
+    bottom: 0;
+    position: absolute; }
+  .specificCommodity .specificCommodityRight .specificCommodityUp li .shopAddNnm {
+    width: 20px;
+    height: 15px;
+    position: absolute;
+    background: #a6e1ec;
+    right: 0;
+    bottom: 0;
+    color: #FFF;
+    text-align: center;
+    font-weight: bold; }
+
+.specificCommodity .specificCommodityRight .specificCommodityDown {
+  width: 808px;
+  height: 139px; }
+  .specificCommodity .specificCommodityRight .specificCommodityDown li {
+    width: 201px;
+    height: 139px;
+    border-right: 1px solid #999;
+    display: inline-block;
+    position: relative; }
+  .specificCommodity .specificCommodityRight .specificCommodityDown li .shopImg img {
+    padding-top: 15px; }
+  .specificCommodity .specificCommodityRight .specificCommodityDown li .description {
+    width: 100px;
+    padding-top: 30px; }
+  .specificCommodity .specificCommodityRight .specificCommodityDown li .addInShopCart {
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+
+.footer {
+  background-color: #D4D4D4;
+  margin-top: 50px; }
+
+.footer div:first-child {
+  padding-top: 50px;
+  text-align: center; }
+
+.footer div:nth-child(2),
+.footer div:nth-child(3) {
+  padding-top: 10px;
+  text-align: center; }
+
+.footer div:nth-child(3) img {
+  padding: 15px 15px 60px; }
+
+.productInfo {
+  width: 380px;
+  height: 260px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background: #F7F7F7; }
+  .productInfo .phoneImg, .productInfo .disc, .productInfo .proPrice {
+    padding: 20px 30px 10px 30px; }
+  .productInfo .proPrice input {
+    width: 60px; }
+  .productInfo .submit {
+    position: absolute;
+    right: 20px;
+    bottom: 20px; }
+
+/*# sourceMappingURL=style.css.map */

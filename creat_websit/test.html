@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
+</head>
+<body>
+	<h2>Test Html</h2>
+	<input type="button" onclick="onClick()" value="test button">
+<script>
+	var xmlhttp = null;
+	function state_Change(ret)
+	{
+		if (xmlhttp.readyState==4)
+		{// 4 = "loaded"
+			if (xmlhttp.status==200)
+			{// 200 = OK
+				console.log(ret);
+				// ...our code here...
+			}
+			else
+			{
+				alert("Problem retrieving XML data");
+			}
+		}
+	}
+	function onClick() {
+		xmlhttp = new window.XMLHttpRequest();
+		xmlhttp.onreadystatechange=state_Change;
+		xmlhttp.open("GET","http://localhost:3001/user",true);
+		xmlhttp.send(null);
+	}
+
+</script>
+</body>
+</html>
