@@ -29,17 +29,20 @@ app.get('/shopInCart',function (req, res) {
 
 var multipart = require('connect-multiparty');
 var multipartMiddleware = multipart();
-var src = null;
 var proInfos =[];
 
 function copyFile(file) {
 	//get filename
-	var filename = file.originalFilename || path.basename(file.path);
+	var filename = file.originalFilename || path.basename(file.path);   //path.basename(file.path)返回路径的最后一部分
 	//copy file to a public directory
+	console.log(path.basename(file.path));
 	var filePath = 'uploadimg/' + filename;
 	var targetPath = path.dirname(__filename)+ '/web/' + filePath;
+	console.log(path.dirname(__filename));
 	//copy file
-	fs.createReadStream(file.path).pipe(fs.createWriteStream(targetPath));
+
+	console.log(file.path);
+	fs.createReadStream(file.path).pipe(fs.createWriteStream(targetPath));//从临时路径中读取后  copy
 	return filePath;
 }
 
@@ -53,7 +56,7 @@ app.post('/upload', multipartMiddleware, function(req, res, next) {
 		Price: req.body.phonePrice
 	};
 	proInfos.push(info);
-	console.log("------body", req.body.phonePrice);
+	
 	res.send({
 		data: info
 	}).end();
