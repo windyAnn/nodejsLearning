@@ -4,8 +4,6 @@ var fs = require('fs');
 var path = require('path');
 var app = express();
 
-
-
 /*第一步：起一个服务器*/
 app.use(express.static("./web"));
 app.get('/indexl', function(req, res){
@@ -32,29 +30,37 @@ app.get('/shopInCart',function (req, res) {
 var multipart = require('connect-multiparty');
 var multipartMiddleware = multipart();
 var src = null;
-var proInfo = null;
+var proInfos =[];
 
 function copyFile(file) {
 	//get filename
-	var filename = file.originalFilename || path.basename(file.path);;
+	var filename = file.originalFilename || path.basename(file.path);
 	//copy file to a public directory
-	var targetPath = path.dirname(__filename)+ '/web/uploadimg/' + filename;
+	var filePath = 'uploadimg/' + filename;
+	var targetPath = path.dirname(__filename)+ '/web/' + filePath;
 	//copy file
 	fs.createReadStream(file.path).pipe(fs.createWriteStream(targetPath));
+	return filePath;
 }
 
 app.post('/upload', multipartMiddleware, function(req, res, next) {
-	console.log("------body", req.body);
+
 	console.log("-----files:", req.files);
-	copyFile(req.files.file);
-	proInfo = req.body.proInfo;
-	res.status(200).end();
+	var filePath = copyFile(req.files.file);
+	var info = {
+		Img:filePath,
+		Discription: req.body.proInfo,
+		Price: req.body.phonePrice
+	};
+	proInfos.push(info);
+	console.log("------body", req.body.phonePrice);
+	res.send({
+		data: info
+	}).end();
 });
 app.get('/upload', multipartMiddleware, function(req, res, next) {
 	res.send({
-		file : "./uploadimg/",
-		proInfo: proInfo
-
+		data: proInfos
 	});
 });
 

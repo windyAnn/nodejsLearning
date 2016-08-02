@@ -210,6 +210,8 @@ li {
   position: fixed;
   top: 50%;
   left: 50%;
+  margin-top: -130px;
+  margin-left: -190px;
   background: #F7F7F7; }
   .productInfo .phoneImg, .productInfo .disc, .productInfo .proPrice {
     padding: 20px 30px 10px 30px; }

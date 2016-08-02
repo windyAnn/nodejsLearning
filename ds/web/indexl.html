@@ -110,7 +110,10 @@
 			<div class="topTipIcon fl"><img src="images/icon/shopIcon.jpg"></div>
 			<div class="topTipText fl">家用电脑</div>
 			<div class="topTipMore fr"><a href="#">更多>></a></div>
-			<div class="topTipMore fr"><a href="#">添加>></a></div>
+			<div class="addPhone topTipMore fr">
+				<input class="addProBtn" type="button" value="添加">&nbsp;
+				<input class="deleteProBtn" type="button" value="删除">
+			</div>
 		</div>
 		<!--具体的商品-->
 		<div class="specificCommodityList">
@@ -126,30 +129,7 @@
 				</ul>
 				<!--具体商品的右边部分的下部分-->
 				<ul class="specificCommodityDown ">
-					<li class=" fl">
-						<a href="#" class="show fl shopImg"><img width="97" src="images/shopImg.jpg"></a>
-						<span class="show fl description">NFC技术一碰轻松配对！接触屏幕<br>1899</span>
-						<a href="#"  class="liThird addInShopCart"><img width=80 src="images/icon/buy_btn.jpg"></a>
-						<span class="shopAddNnm hide"></span>
-					</li>
-					<li class=" fl">
-						<a href="#" class="show fl shopImg"><img width="97" src="images/shopImg.jpg"></a>
-						<span class="show fl description">NFC技术一碰轻松配对！接触屏幕<br>1899</span>
-						<a href="#"  class="liThird addInShopCart"><img width=80 src="images/icon/buy_btn.jpg"></a>
-						<span class="shopAddNnm hide"></span>
-					</li>
-					<li class=" fl">
-						<a href="#" class="show fl shopImg"><img width="97" src="images/shopImg.jpg"></a>
-						<span class="show fl description">NFC技术一碰轻松配对！接触屏幕<br>1899</span>
-						<a href="#"  class="liThird addInShopCart"><img width=80 src="images/icon/buy_btn.jpg"></a>
-						<span class="shopAddNnm hide"></span>
-					</li>
-					<li class=" fl">
-						<a href="#" class="show fl shopImg"><img width="97" src="images/shopImg.jpg"></a>
-						<span class="show fl description">NFC技术一碰轻松配对！接触屏幕<br>1899</span>
-						<a href="#"  class="liThird addInShopCart"><img width=80 src="images/icon/buy_btn.jpg"></a>
-						<span class="shopAddNnm hide"></span>
-					</li>
+
 				</ul>
 
 			</div>
@@ -159,7 +139,7 @@
 </div>
 
 <!--点击添加后弹出一个对话框-->
-<div class="show productInfo">
+<div class="productInfo hide" >
 	<form action="/example/html5/demo_form.asp" method="get" id="formData">
 		<div class="phoneImg">
 			选择产品图片：<input id="uploadfile" type="file" name="img" multiple="multiple" accept="image/*"/>
@@ -170,9 +150,8 @@
 			<span> 不得超过10个字</span><br>
 		</div>
 		<div class="proPrice">
-			商品价格：<input type="text">
+			商品价格：<input type="text" id="phonePrice">
 		</div>
-
 		<!-- input class="submit" type="submit" / -->
 		<input  class="submit" type="button" value="tijiao" >
 	</form>
